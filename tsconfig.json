@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "target": "ES2019",
+    "lib": ["ES2019"],
+  },
+  "files": [
+    "src/types/authenticatedUser.d.ts"
+  ]
+}
