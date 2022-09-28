@@ -19,10 +19,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(corsProvider());
 
+// Routes
 RegisterRoutes(app);
-
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerJson));
 
+// Error handler
 app.use(jsonErrorHandler);
 
 app.listen(config.port, () => {
