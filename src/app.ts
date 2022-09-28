@@ -6,13 +6,18 @@ import { config as dotConfig } from 'dotenv';
 import { RegisterRoutes } from "../build/routes";
 import * as swaggerJson from '../build/swagger.json';
 import { config } from './config';
+import {corsProvider} from "../providers/cors";
+import {User} from "./users/user";
 
 dotConfig();
 
 const app = express();
 
+// Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(corsProvider());
+
 
 RegisterRoutes(app);
 
