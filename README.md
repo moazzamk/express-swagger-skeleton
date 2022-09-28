@@ -5,6 +5,20 @@ API documentation. The swagger spec is generated from annotations
 on top of controller methods along with routes for Express. It helps
 keep the docs for the API up to date .
 
+### Setup
+
+To start the project, you need to run: 
+```
+yarn install
+
+# This is optional but helpful if you want to
+# maintain multiple environments
+cp example.env .env
+
+# Start the development server
+yarn dev
+```
+
 
 ### Commands
 
