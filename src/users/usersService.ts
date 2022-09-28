@@ -17,7 +17,6 @@ export class UsersService {
 			id: Math.floor(Math.random() * 10000),
 			status: 'Happy',
 			...userCreationParams,
-
 		};
 	}	
 

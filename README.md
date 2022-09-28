@@ -19,6 +19,11 @@ keep the docs for the API up to date .
   ```
   yarn build 
   ```
+  
+- To run tests
+  ```
+  yarn test
+  ```
 
 ### Places
 - `tsoa.json` contains the general OpenAPI spec. You

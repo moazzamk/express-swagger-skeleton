@@ -11,6 +11,11 @@ import { LoginSuccessResponse } from "./loginSuccessResponse";
 import { config } from "../config";
 import { log } from "../utils/logger";
 
+
+/**
+ * Authenticates a user
+ * @summary Authenticates a user
+ */
 @Tags('Authentication')
 @Route('login')
 export class LoginController extends Controller {

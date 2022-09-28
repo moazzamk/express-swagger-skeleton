@@ -6,9 +6,9 @@ import { config as dotConfig } from 'dotenv';
 import { RegisterRoutes } from "../build/routes";
 import * as swaggerJson from '../build/swagger.json';
 import { config } from './config';
-import {corsProvider} from "../providers/cors";
+import {corsProvider} from "./providers/cors";
 import { log } from './utils/logger';
-import {jsonErrorHandler} from "../providers/errorHandler";
+import {jsonErrorHandler} from "./providers/errorHandler";
 
 dotConfig();
 
