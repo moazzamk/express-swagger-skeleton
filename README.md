@@ -34,3 +34,4 @@ keep the docs for the API up to date .
   
 ### Helpful links
 - https://github.com/lukeautry/tsoa/blob/master/packages/tsoa/tsconfig.json
+- https://tsoa-community.github.io/docs/getting-started.html
