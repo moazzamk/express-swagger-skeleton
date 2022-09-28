@@ -29,7 +29,8 @@ keep the docs for the API up to date .
 - `GET /users/{id}` is a protected endpoint that requires an authenticated user. You 
   can use it as an example to create other protected endpoints
 - `/providers` contains all middleware
-
+- `http://.../docs` will show Swagger UI with API endpoints that you
+  can use to test the API out
   
 ### Helpful links
 - https://github.com/lukeautry/tsoa/blob/master/packages/tsoa/tsconfig.json
