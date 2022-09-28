@@ -8,6 +8,7 @@ import * as swaggerJson from '../build/swagger.json';
 import { config } from './config';
 import {corsProvider} from "../providers/cors";
 import { log } from './utils/logger';
+import {jsonErrorHandler} from "../providers/errorHandler";
 
 dotConfig();
 
@@ -21,6 +22,8 @@ app.use(corsProvider());
 RegisterRoutes(app);
 
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerJson));
+
+app.use(jsonErrorHandler);
 
 app.listen(config.port, () => {
     log.info(`API started on port ${config.port}`);

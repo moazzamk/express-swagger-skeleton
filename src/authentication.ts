@@ -17,9 +17,14 @@ export function expressAuthentication(
            if (!token) {
                reject(new Error('no token provided'))
            }
-           const user = verify(token, config.jwt.secret);
 
-           resolve(user); // this will be available in the controller as request.user
+           try {
+               const user = verify(token, config.jwt.secret);
+               resolve(user); // this will be available in the controller as request.user
+           } catch (e) {
+               reject(new Error('Invalid token provided'));
+           }
+
         });
     }
 }
